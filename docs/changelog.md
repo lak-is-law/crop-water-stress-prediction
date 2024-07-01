@@ -6,3 +6,4 @@
 - 2024-07-01 17:25: test(metrics): calculate RMSE on validation weather station data
 - 2024-07-01 18:44: feat(pipeline): automated vapor pressure deficit computation
 - 2024-07-01 20:35: feat(model): canopy temperature depression regression model
+- 2024-07-01 21:03: feat(model): canopy temperature depression regression model
