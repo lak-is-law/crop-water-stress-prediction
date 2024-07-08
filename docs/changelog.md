@@ -7,3 +7,4 @@
 - 2024-07-01 18:44: feat(pipeline): automated vapor pressure deficit computation
 - 2024-07-01 20:35: feat(model): canopy temperature depression regression model
 - 2024-07-01 21:03: feat(model): canopy temperature depression regression model
+- 2024-07-08 10:19: refactor(features): extract diurnal temperature differential
