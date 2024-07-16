@@ -14,3 +14,4 @@
 - 2024-07-11 16:58: feat(model): canopy temperature depression regression model
 - 2024-07-11 17:56: refactor(features): extract diurnal temperature differential
 - 2024-07-11 22:28: test(metrics): calculate RMSE on validation weather station data
+- 2024-07-16 10:52: fix(dataset): filter solar radiation sensor drift anomalies
