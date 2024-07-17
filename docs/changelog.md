@@ -20,3 +20,4 @@
 - 2024-07-16 20:14: fix(dataset): filter solar radiation sensor drift anomalies
 - 2024-07-17 11:20: refactor(features): extract diurnal temperature differential
 - 2024-07-17 12:12: test(metrics): calculate RMSE on validation weather station data
+- 2024-07-17 16:46: perf(inference): optimize CWSI threshold evaluation loop
