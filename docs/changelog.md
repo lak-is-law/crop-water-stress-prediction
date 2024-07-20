@@ -26,3 +26,4 @@
 - 2024-07-17 19:43: perf(inference): optimize CWSI threshold evaluation loop
 - 2024-07-17 21:24: perf(inference): optimize CWSI threshold evaluation loop
 - 2024-07-20 10:41: perf(inference): optimize CWSI threshold evaluation loop
+- 2024-07-20 11:06: docs(model): document Jackson baseline equation coefficients
