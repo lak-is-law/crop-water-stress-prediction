@@ -29,3 +29,4 @@
 - 2024-07-20 11:06: docs(model): document Jackson baseline equation coefficients
 - 2024-07-20 12:37: feat(pipeline): automated vapor pressure deficit computation
 - 2024-07-20 13:06: feat(model): canopy temperature depression regression model
+- 2024-07-20 14:12: fix(dataset): filter solar radiation sensor drift anomalies
