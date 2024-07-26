@@ -40,3 +40,4 @@
 - 2024-07-20 22:31: docs(model): document Jackson baseline equation coefficients
 - 2024-07-26 11:07: feat(model): canopy temperature depression regression model
 - 2024-07-26 13:55: perf(inference): optimize CWSI threshold evaluation loop
+- 2024-07-26 14:51: test(metrics): calculate RMSE on validation weather station data
