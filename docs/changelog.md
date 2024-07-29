@@ -43,3 +43,4 @@
 - 2024-07-26 14:51: test(metrics): calculate RMSE on validation weather station data
 - 2024-07-26 18:25: feat(pipeline): automated vapor pressure deficit computation
 - 2024-07-29 11:13: docs(model): document Jackson baseline equation coefficients
+- 2024-07-29 12:57: test(metrics): calculate RMSE on validation weather station data
