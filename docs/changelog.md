@@ -48,3 +48,4 @@
 - 2024-07-29 15:02: feat(pipeline): automated vapor pressure deficit computation
 - 2024-07-29 16:00: fix(dataset): filter solar radiation sensor drift anomalies
 - 2024-07-29 18:58: fix(dataset): filter solar radiation sensor drift anomalies
+- 2024-07-29 19:53: test(metrics): calculate RMSE on validation weather station data
