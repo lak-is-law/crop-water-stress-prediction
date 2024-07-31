@@ -57,3 +57,4 @@
 - 2024-07-31 16:18: docs(model): document Jackson baseline equation coefficients
 - 2024-07-31 17:38: docs(model): document Jackson baseline equation coefficients
 - 2024-07-31 18:52: perf(inference): optimize CWSI threshold evaluation loop
+- 2024-07-31 20:29: feat(model): canopy temperature depression regression model
