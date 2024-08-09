@@ -53,3 +53,4 @@
 - 2024-08-09 14:33: feat(model): canopy temperature depression regression model
 - 2024-08-09 18:44: feat(pipeline): automated vapor pressure deficit computation
 - 2024-08-09 19:51: fix(dataset): filter solar radiation sensor drift anomalies
+- 2024-08-09 22:54: perf(inference): optimize CWSI threshold evaluation loop
