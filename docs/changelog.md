@@ -54,3 +54,4 @@
 - 2024-08-10 16:50: feat(pipeline): automated vapor pressure deficit computation
 - 2024-08-10 17:25: perf(inference): optimize CWSI threshold evaluation loop
 - 2024-08-10 18:41: docs(model): document Jackson baseline equation coefficients
+- 2024-08-10 19:11: test(metrics): calculate RMSE on validation weather station data
