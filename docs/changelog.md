@@ -52,3 +52,4 @@
 - 2024-08-16 10:07: docs(model): document Jackson baseline equation coefficients
 - 2024-08-16 11:15: docs(model): document Jackson baseline equation coefficients
 - 2024-08-16 14:50: refactor(features): extract diurnal temperature differential
+- 2024-08-16 15:02: docs(model): document Jackson baseline equation coefficients
