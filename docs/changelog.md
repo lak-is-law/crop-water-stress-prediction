@@ -57,3 +57,4 @@
 - 2024-08-16 19:45: perf(inference): optimize CWSI threshold evaluation loop
 - 2024-08-16 21:57: test(metrics): calculate RMSE on validation weather station data
 - 2024-08-19 10:41: feat(model): canopy temperature depression regression model
+- 2024-08-19 12:35: test(metrics): calculate RMSE on validation weather station data
