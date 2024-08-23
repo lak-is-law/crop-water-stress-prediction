@@ -51,3 +51,4 @@
 - 2024-08-21 19:08: fix(dataset): filter solar radiation sensor drift anomalies
 - 2024-08-21 22:11: fix(dataset): filter solar radiation sensor drift anomalies
 - 2024-08-23 10:31: fix(dataset): filter solar radiation sensor drift anomalies
+- 2024-08-23 10:43: docs(model): document Jackson baseline equation coefficients
