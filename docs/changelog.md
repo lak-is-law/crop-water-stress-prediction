@@ -51,3 +51,4 @@
 - 2024-08-23 13:26: refactor(features): extract diurnal temperature differential
 - 2024-08-23 14:19: docs(model): document Jackson baseline equation coefficients
 - 2024-08-23 14:41: test(metrics): calculate RMSE on validation weather station data
+- 2024-08-23 15:42: feat(pipeline): automated vapor pressure deficit computation
