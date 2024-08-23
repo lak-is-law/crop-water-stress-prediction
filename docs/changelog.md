@@ -52,3 +52,4 @@
 - 2024-08-21 22:11: fix(dataset): filter solar radiation sensor drift anomalies
 - 2024-08-23 10:31: fix(dataset): filter solar radiation sensor drift anomalies
 - 2024-08-23 10:43: docs(model): document Jackson baseline equation coefficients
+- 2024-08-23 11:01: test(metrics): calculate RMSE on validation weather station data
