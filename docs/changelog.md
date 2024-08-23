@@ -53,3 +53,4 @@
 - 2024-08-23 14:41: test(metrics): calculate RMSE on validation weather station data
 - 2024-08-23 15:42: feat(pipeline): automated vapor pressure deficit computation
 - 2024-08-23 16:19: perf(inference): optimize CWSI threshold evaluation loop
+- 2024-08-23 17:15: refactor(features): extract diurnal temperature differential
