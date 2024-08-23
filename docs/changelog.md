@@ -53,3 +53,4 @@
 - 2024-08-23 10:31: fix(dataset): filter solar radiation sensor drift anomalies
 - 2024-08-23 10:43: docs(model): document Jackson baseline equation coefficients
 - 2024-08-23 11:01: test(metrics): calculate RMSE on validation weather station data
+- 2024-08-23 11:35: feat(pipeline): automated vapor pressure deficit computation
