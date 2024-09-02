@@ -57,3 +57,4 @@
 - 2024-09-02 14:12: perf(inference): optimize CWSI threshold evaluation loop
 - 2024-09-02 15:05: docs(model): document Jackson baseline equation coefficients
 - 2024-09-02 16:17: perf(inference): optimize CWSI threshold evaluation loop
+- 2024-09-02 17:49: test(metrics): calculate RMSE on validation weather station data
