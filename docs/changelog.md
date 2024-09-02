@@ -52,3 +52,4 @@
 - 2024-09-02 18:56: refactor(features): extract diurnal temperature differential
 - 2024-09-02 19:30: perf(inference): optimize CWSI threshold evaluation loop
 - 2024-09-02 20:11: refactor(features): extract diurnal temperature differential
+- 2024-09-02 21:17: docs(model): document Jackson baseline equation coefficients
