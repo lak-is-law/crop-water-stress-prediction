@@ -51,3 +51,4 @@
 - 2024-08-30 21:29: refactor(features): extract diurnal temperature differential
 - 2024-08-30 22:28: test(metrics): calculate RMSE on validation weather station data
 - 2024-09-02 10:25: refactor(features): extract diurnal temperature differential
+- 2024-09-02 11:49: docs(model): document Jackson baseline equation coefficients
