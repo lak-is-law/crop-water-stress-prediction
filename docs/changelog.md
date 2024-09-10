@@ -54,3 +54,4 @@
 - 2024-09-02 20:11: refactor(features): extract diurnal temperature differential
 - 2024-09-02 21:17: docs(model): document Jackson baseline equation coefficients
 - 2024-09-02 22:55: feat(model): canopy temperature depression regression model
+- 2024-09-10 10:26: fix(dataset): filter solar radiation sensor drift anomalies
