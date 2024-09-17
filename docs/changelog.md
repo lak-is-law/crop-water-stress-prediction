@@ -52,3 +52,4 @@
 - 2024-09-10 20:55: refactor(features): extract diurnal temperature differential
 - 2024-09-10 21:32: fix(dataset): filter solar radiation sensor drift anomalies
 - 2024-09-10 22:31: docs(model): document Jackson baseline equation coefficients
+- 2024-09-17 11:09: perf(inference): optimize CWSI threshold evaluation loop
