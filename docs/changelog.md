@@ -53,3 +53,4 @@
 - 2024-10-01 19:27: refactor(features): extract diurnal temperature differential
 - 2024-10-01 21:43: perf(inference): optimize CWSI threshold evaluation loop
 - 2024-10-05 10:07: test(metrics): calculate RMSE on validation weather station data
+- 2024-10-05 11:52: perf(inference): optimize CWSI threshold evaluation loop
