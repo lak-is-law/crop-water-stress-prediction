@@ -56,3 +56,4 @@
 - 2024-10-05 11:52: perf(inference): optimize CWSI threshold evaluation loop
 - 2024-10-05 14:13: refactor(features): extract diurnal temperature differential
 - 2024-10-05 16:34: feat(model): canopy temperature depression regression model
+- 2024-10-05 18:20: feat(model): canopy temperature depression regression model
