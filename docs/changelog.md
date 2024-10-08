@@ -50,3 +50,4 @@
 - 2024-10-05 18:20: feat(model): canopy temperature depression regression model
 - 2024-10-05 21:42: feat(pipeline): automated vapor pressure deficit computation
 - 2024-10-08 14:07: perf(inference): optimize CWSI threshold evaluation loop
+- 2024-10-08 19:11: refactor(features): extract diurnal temperature differential
