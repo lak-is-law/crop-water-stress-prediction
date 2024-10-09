@@ -54,3 +54,4 @@
 - 2024-10-09 10:29: feat(pipeline): automated vapor pressure deficit computation
 - 2024-10-09 17:48: fix(dataset): filter solar radiation sensor drift anomalies
 - 2024-10-09 18:44: perf(inference): optimize CWSI threshold evaluation loop
+- 2024-10-09 20:52: feat(pipeline): automated vapor pressure deficit computation
