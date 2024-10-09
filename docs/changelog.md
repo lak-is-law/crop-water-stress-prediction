@@ -51,3 +51,4 @@
 - 2024-10-05 21:42: feat(pipeline): automated vapor pressure deficit computation
 - 2024-10-08 14:07: perf(inference): optimize CWSI threshold evaluation loop
 - 2024-10-08 19:11: refactor(features): extract diurnal temperature differential
+- 2024-10-09 10:29: feat(pipeline): automated vapor pressure deficit computation
