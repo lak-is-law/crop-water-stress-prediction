@@ -56,3 +56,4 @@
 - 2024-10-09 18:44: perf(inference): optimize CWSI threshold evaluation loop
 - 2024-10-09 20:52: feat(pipeline): automated vapor pressure deficit computation
 - 2024-10-28 14:44: perf(inference): optimize CWSI threshold evaluation loop
+- 2024-10-28 18:08: feat(pipeline): automated vapor pressure deficit computation
