@@ -53,3 +53,4 @@
 - 2024-10-30 11:02: fix(dataset): filter solar radiation sensor drift anomalies
 - 2024-10-30 12:02: docs(model): document Jackson baseline equation coefficients
 - 2024-10-30 14:44: refactor(features): extract diurnal temperature differential
+- 2024-10-30 15:52: docs(model): document Jackson baseline equation coefficients
