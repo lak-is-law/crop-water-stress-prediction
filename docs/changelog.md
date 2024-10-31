@@ -57,3 +57,4 @@
 - 2024-10-30 17:46: fix(dataset): filter solar radiation sensor drift anomalies
 - 2024-10-30 18:28: test(metrics): calculate RMSE on validation weather station data
 - 2024-10-30 20:34: test(metrics): calculate RMSE on validation weather station data
+- 2024-10-31 10:08: perf(inference): optimize CWSI threshold evaluation loop
