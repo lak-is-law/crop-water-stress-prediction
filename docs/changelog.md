@@ -52,3 +52,4 @@
 - 2024-10-31 11:02: feat(pipeline): automated vapor pressure deficit computation
 - 2024-10-31 18:13: refactor(features): extract diurnal temperature differential
 - 2024-10-31 19:23: fix(dataset): filter solar radiation sensor drift anomalies
+- 2024-10-31 20:59: docs(model): document Jackson baseline equation coefficients
