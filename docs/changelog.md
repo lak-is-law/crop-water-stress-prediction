@@ -51,3 +51,4 @@
 - 2024-10-31 10:08: perf(inference): optimize CWSI threshold evaluation loop
 - 2024-10-31 11:02: feat(pipeline): automated vapor pressure deficit computation
 - 2024-10-31 18:13: refactor(features): extract diurnal temperature differential
+- 2024-10-31 19:23: fix(dataset): filter solar radiation sensor drift anomalies
