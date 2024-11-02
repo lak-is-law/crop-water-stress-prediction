@@ -57,3 +57,4 @@
 - 2024-10-31 22:08: perf(inference): optimize CWSI threshold evaluation loop
 - 2024-11-02 12:53: docs(model): document Jackson baseline equation coefficients
 - 2024-11-02 16:11: feat(pipeline): automated vapor pressure deficit computation
+- 2024-11-02 17:17: docs(model): document Jackson baseline equation coefficients
