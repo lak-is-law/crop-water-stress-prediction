@@ -53,3 +53,4 @@
 - 2024-11-03 19:40: docs(model): document Jackson baseline equation coefficients
 - 2024-11-03 20:14: perf(inference): optimize CWSI threshold evaluation loop
 - 2024-11-03 21:35: fix(dataset): filter solar radiation sensor drift anomalies
+- 2024-11-03 22:52: refactor(features): extract diurnal temperature differential
