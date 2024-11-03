@@ -56,3 +56,4 @@
 - 2024-11-03 13:05: feat(pipeline): automated vapor pressure deficit computation
 - 2024-11-03 14:03: refactor(features): extract diurnal temperature differential
 - 2024-11-03 15:24: refactor(features): extract diurnal temperature differential
+- 2024-11-03 16:07: docs(model): document Jackson baseline equation coefficients
