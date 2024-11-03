@@ -52,3 +52,4 @@
 - 2024-11-02 18:52: perf(inference): optimize CWSI threshold evaluation loop
 - 2024-11-02 22:59: feat(model): canopy temperature depression regression model
 - 2024-11-03 11:51: feat(model): canopy temperature depression regression model
+- 2024-11-03 12:02: perf(inference): optimize CWSI threshold evaluation loop
