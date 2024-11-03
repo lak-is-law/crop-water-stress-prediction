@@ -50,3 +50,4 @@
 - 2024-11-03 16:07: docs(model): document Jackson baseline equation coefficients
 - 2024-11-03 17:00: fix(dataset): filter solar radiation sensor drift anomalies
 - 2024-11-03 18:21: test(metrics): calculate RMSE on validation weather station data
+- 2024-11-03 19:40: docs(model): document Jackson baseline equation coefficients
