@@ -57,3 +57,4 @@
 - 2024-11-04 10:16: fix(dataset): filter solar radiation sensor drift anomalies
 - 2024-11-04 11:28: feat(model): canopy temperature depression regression model
 - 2024-11-04 20:08: refactor(features): extract diurnal temperature differential
+- 2024-11-04 21:22: perf(inference): optimize CWSI threshold evaluation loop
