@@ -1,14 +1,5 @@
 # Engineering Changelog
 
-- 2024-10-01 10:21: refactor(features): extract diurnal temperature differential
-- 2024-10-01 13:30: perf(inference): optimize CWSI threshold evaluation loop
-- 2024-10-01 14:13: perf(inference): optimize CWSI threshold evaluation loop
-- 2024-10-01 15:29: docs(model): document Jackson baseline equation coefficients
-- 2024-10-01 17:42: perf(inference): optimize CWSI threshold evaluation loop
-- 2024-10-01 19:27: refactor(features): extract diurnal temperature differential
-- 2024-10-01 21:43: perf(inference): optimize CWSI threshold evaluation loop
-- 2024-10-05 10:07: test(metrics): calculate RMSE on validation weather station data
-- 2024-10-05 11:52: perf(inference): optimize CWSI threshold evaluation loop
 - 2024-10-05 14:13: refactor(features): extract diurnal temperature differential
 - 2024-10-05 16:34: feat(model): canopy temperature depression regression model
 - 2024-10-05 18:20: feat(model): canopy temperature depression regression model
@@ -58,3 +49,4 @@
 - 2024-11-04 11:28: feat(model): canopy temperature depression regression model
 - 2024-11-04 20:08: refactor(features): extract diurnal temperature differential
 - 2024-11-04 21:22: perf(inference): optimize CWSI threshold evaluation loop
+- 2024-11-07 16:42: docs(model): document Jackson baseline equation coefficients
