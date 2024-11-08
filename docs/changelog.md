@@ -52,3 +52,4 @@
 - 2024-11-07 16:42: docs(model): document Jackson baseline equation coefficients
 - 2024-11-08 10:41: docs(model): document Jackson baseline equation coefficients
 - 2024-11-08 12:34: feat(pipeline): automated vapor pressure deficit computation
+- 2024-11-08 13:08: feat(model): canopy temperature depression regression model
