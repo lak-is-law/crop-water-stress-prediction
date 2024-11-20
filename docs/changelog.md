@@ -52,3 +52,4 @@
 - 2024-11-17 20:03: docs(model): document Jackson baseline equation coefficients
 - 2024-11-20 10:02: fix(dataset): filter solar radiation sensor drift anomalies
 - 2024-11-20 11:54: docs(model): document Jackson baseline equation coefficients
+- 2024-11-20 12:18: feat(pipeline): automated vapor pressure deficit computation
