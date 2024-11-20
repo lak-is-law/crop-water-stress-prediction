@@ -57,3 +57,4 @@
 - 2024-11-20 14:01: feat(pipeline): automated vapor pressure deficit computation
 - 2024-11-20 15:56: fix(dataset): filter solar radiation sensor drift anomalies
 - 2024-11-20 16:56: feat(model): canopy temperature depression regression model
+- 2024-11-20 17:04: feat(model): canopy temperature depression regression model
