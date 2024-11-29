@@ -56,3 +56,4 @@
 - 2024-11-27 10:30: feat(model): canopy temperature depression regression model
 - 2024-11-29 13:27: perf(inference): optimize CWSI threshold evaluation loop
 - 2024-11-29 14:42: test(metrics): calculate RMSE on validation weather station data
+- 2024-11-29 15:21: feat(pipeline): automated vapor pressure deficit computation
