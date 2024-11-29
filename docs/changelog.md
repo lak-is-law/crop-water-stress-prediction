@@ -1,14 +1,5 @@
 # Engineering Changelog
 
-- 2024-10-30 17:46: fix(dataset): filter solar radiation sensor drift anomalies
-- 2024-10-30 18:28: test(metrics): calculate RMSE on validation weather station data
-- 2024-10-30 20:34: test(metrics): calculate RMSE on validation weather station data
-- 2024-10-31 10:08: perf(inference): optimize CWSI threshold evaluation loop
-- 2024-10-31 11:02: feat(pipeline): automated vapor pressure deficit computation
-- 2024-10-31 18:13: refactor(features): extract diurnal temperature differential
-- 2024-10-31 19:23: fix(dataset): filter solar radiation sensor drift anomalies
-- 2024-10-31 20:59: docs(model): document Jackson baseline equation coefficients
-- 2024-10-31 21:58: feat(model): canopy temperature depression regression model
 - 2024-10-31 22:08: perf(inference): optimize CWSI threshold evaluation loop
 - 2024-11-02 12:53: docs(model): document Jackson baseline equation coefficients
 - 2024-11-02 16:11: feat(pipeline): automated vapor pressure deficit computation
@@ -58,3 +49,4 @@
 - 2024-11-29 14:42: test(metrics): calculate RMSE on validation weather station data
 - 2024-11-29 15:21: feat(pipeline): automated vapor pressure deficit computation
 - 2024-11-29 16:45: perf(inference): optimize CWSI threshold evaluation loop
+- 2024-11-29 19:07: feat(model): canopy temperature depression regression model
