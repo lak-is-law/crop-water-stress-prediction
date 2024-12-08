@@ -55,3 +55,4 @@
 - 2024-12-03 19:25: test(metrics): calculate RMSE on validation weather station data
 - 2024-12-03 20:08: refactor(features): extract diurnal temperature differential
 - 2024-12-03 22:27: fix(dataset): filter solar radiation sensor drift anomalies
+- 2024-12-08 10:46: test(metrics): calculate RMSE on validation weather station data
