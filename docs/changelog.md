@@ -52,3 +52,4 @@
 - 2024-12-08 13:30: fix(dataset): filter solar radiation sensor drift anomalies
 - 2024-12-08 16:40: feat(model): canopy temperature depression regression model
 - 2024-12-08 17:57: fix(dataset): filter solar radiation sensor drift anomalies
+- 2024-12-08 21:10: test(metrics): calculate RMSE on validation weather station data
