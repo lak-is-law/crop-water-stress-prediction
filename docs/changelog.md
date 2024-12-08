@@ -56,3 +56,4 @@
 - 2024-12-03 20:08: refactor(features): extract diurnal temperature differential
 - 2024-12-03 22:27: fix(dataset): filter solar radiation sensor drift anomalies
 - 2024-12-08 10:46: test(metrics): calculate RMSE on validation weather station data
+- 2024-12-08 11:24: feat(pipeline): automated vapor pressure deficit computation
