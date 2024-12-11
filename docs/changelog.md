@@ -55,3 +55,4 @@
 - 2024-12-08 21:10: test(metrics): calculate RMSE on validation weather station data
 - 2024-12-11 12:06: test(metrics): calculate RMSE on validation weather station data
 - 2024-12-11 13:21: feat(pipeline): automated vapor pressure deficit computation
+- 2024-12-11 16:04: test(metrics): calculate RMSE on validation weather station data
