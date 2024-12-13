@@ -53,3 +53,4 @@
 - 2024-12-13 12:35: fix(dataset): filter solar radiation sensor drift anomalies
 - 2024-12-13 14:54: test(metrics): calculate RMSE on validation weather station data
 - 2024-12-13 15:26: feat(pipeline): automated vapor pressure deficit computation
+- 2024-12-13 16:09: perf(inference): optimize CWSI threshold evaluation loop
