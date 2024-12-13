@@ -1,14 +1,5 @@
 # Engineering Changelog
 
-- 2024-11-03 14:03: refactor(features): extract diurnal temperature differential
-- 2024-11-03 15:24: refactor(features): extract diurnal temperature differential
-- 2024-11-03 16:07: docs(model): document Jackson baseline equation coefficients
-- 2024-11-03 17:00: fix(dataset): filter solar radiation sensor drift anomalies
-- 2024-11-03 18:21: test(metrics): calculate RMSE on validation weather station data
-- 2024-11-03 19:40: docs(model): document Jackson baseline equation coefficients
-- 2024-11-03 20:14: perf(inference): optimize CWSI threshold evaluation loop
-- 2024-11-03 21:35: fix(dataset): filter solar radiation sensor drift anomalies
-- 2024-11-03 22:52: refactor(features): extract diurnal temperature differential
 - 2024-11-04 10:16: fix(dataset): filter solar radiation sensor drift anomalies
 - 2024-11-04 11:28: feat(model): canopy temperature depression regression model
 - 2024-11-04 20:08: refactor(features): extract diurnal temperature differential
@@ -58,3 +49,4 @@
 - 2024-12-11 16:04: test(metrics): calculate RMSE on validation weather station data
 - 2024-12-11 21:00: perf(inference): optimize CWSI threshold evaluation loop
 - 2024-12-11 22:29: docs(model): document Jackson baseline equation coefficients
+- 2024-12-13 10:20: fix(dataset): filter solar radiation sensor drift anomalies
