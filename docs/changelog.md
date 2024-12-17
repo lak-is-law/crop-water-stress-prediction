@@ -53,3 +53,4 @@
 - 2024-12-16 18:58: feat(model): canopy temperature depression regression model
 - 2024-12-16 19:13: perf(inference): optimize CWSI threshold evaluation loop
 - 2024-12-16 20:46: test(metrics): calculate RMSE on validation weather station data
+- 2024-12-17 13:25: refactor(features): extract diurnal temperature differential
