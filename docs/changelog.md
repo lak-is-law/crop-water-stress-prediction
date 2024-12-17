@@ -56,3 +56,4 @@
 - 2024-12-17 13:25: refactor(features): extract diurnal temperature differential
 - 2024-12-17 16:47: refactor(features): extract diurnal temperature differential
 - 2024-12-17 18:45: test(metrics): calculate RMSE on validation weather station data
+- 2024-12-17 22:55: feat(model): canopy temperature depression regression model
