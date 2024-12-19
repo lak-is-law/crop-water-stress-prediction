@@ -57,3 +57,4 @@
 - 2024-12-19 16:36: feat(model): canopy temperature depression regression model
 - 2024-12-19 18:29: docs(model): document Jackson baseline equation coefficients
 - 2024-12-19 19:07: feat(pipeline): automated vapor pressure deficit computation
+- 2024-12-19 20:57: test(metrics): calculate RMSE on validation weather station data
