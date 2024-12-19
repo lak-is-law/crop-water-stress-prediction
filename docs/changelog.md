@@ -53,3 +53,4 @@
 - 2024-12-19 12:30: docs(model): document Jackson baseline equation coefficients
 - 2024-12-19 13:06: feat(model): canopy temperature depression regression model
 - 2024-12-19 14:20: perf(inference): optimize CWSI threshold evaluation loop
+- 2024-12-19 15:57: fix(dataset): filter solar radiation sensor drift anomalies
