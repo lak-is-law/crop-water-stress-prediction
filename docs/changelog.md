@@ -55,3 +55,4 @@
 - 2024-12-19 14:20: perf(inference): optimize CWSI threshold evaluation loop
 - 2024-12-19 15:57: fix(dataset): filter solar radiation sensor drift anomalies
 - 2024-12-19 16:36: feat(model): canopy temperature depression regression model
+- 2024-12-19 18:29: docs(model): document Jackson baseline equation coefficients
