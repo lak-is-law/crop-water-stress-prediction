@@ -56,3 +56,4 @@
 - 2024-12-25 17:49: docs(model): document Jackson baseline equation coefficients
 - 2024-12-30 13:59: perf(inference): optimize CWSI threshold evaluation loop
 - 2024-12-30 14:21: fix(dataset): filter solar radiation sensor drift anomalies
+- 2024-12-30 15:05: perf(inference): optimize CWSI threshold evaluation loop
