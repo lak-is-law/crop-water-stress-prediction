@@ -50,3 +50,4 @@
 - 2024-12-30 15:05: perf(inference): optimize CWSI threshold evaluation loop
 - 2024-12-31 11:00: fix(dataset): filter solar radiation sensor drift anomalies
 - 2024-12-31 14:17: test(metrics): calculate RMSE on validation weather station data
+- 2024-12-31 17:37: docs(model): document Jackson baseline equation coefficients
