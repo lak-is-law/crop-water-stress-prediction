@@ -64,6 +64,40 @@ def analyze_data_from_db(conn):
     preds = model.predict(X_test_scaled)
     print(f"Model Accuracy: {accuracy_score(y_test, preds):.4f}")
     
+    # Custom Input Loop
+    print("\n" + "="*40)
+    print("🔮 Custom Water Stress Prediction 🔮")
+    print("="*40)
+    while True:
+        choice = input("\nWould you like to enter custom inputs for a prediction? (y/n): ").strip().lower()
+        if choice != 'y':
+            print("Exiting custom prediction.")
+            break
+            
+        try:
+            moist = float(input("Enter Soil Moisture (e.g., 10 to 60): "))
+            temp = float(input("Enter Temperature in °C (e.g., 15 to 45): "))
+            hum = float(input("Enter Humidity % (e.g., 20 to 90): "))
+            veg = float(input("Enter Vegetation Index (e.g., 0.2 to 0.9): "))
+            
+            # Create a dataframe for the custom input to match training feature names
+            # Features used: ['soil_moisture', 'temperature', 'humidity', 'vegetation_index']
+            custom_df = pd.DataFrame([[moist, temp, hum, veg]], columns=feature_cols)
+            
+            # Scale the input using the same scaler used for training
+            custom_scaled = scaler.transform(custom_df)
+            
+            # Predict
+            prediction = model.predict(custom_scaled)[0]
+            
+            if prediction == 1:
+                print("\n⚠️  PREDICTION: The crop is likely UNDER WATER STRESS. Needs irrigation!")
+            else:
+                print("\n✅ PREDICTION: The crop is HEALTHY (No water stress).")
+                
+        except ValueError:
+            print("Invalid input. Please enter numerical values only.")
+    
 def main():
     conn = setup_database_and_load_data()
     if conn:
