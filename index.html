@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Water Stress Prediction</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+        header {
+            background: #2c3e50;
+            color: #fff;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            background: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 0.5rem;
+        }
+        code {
+            background: #ecf0f1;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        pre {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 1rem;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+        .btn {
+            display: inline-block;
+            background: #3498db;
+            color: #fff;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 1rem;
+        }
+        .btn:hover {
+            background: #2980b9;
+        }
+        footer {
+            text-align: center;
+            margin-top: 2rem;
+            padding: 1rem;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Crop Water Stress Prediction</h1>
+    <p>Using Kernel-Based Classification (Non-linear SVM) to monitor crop health</p>
+</header>
+
+<div class="container">
+    <h2>About The Project</h2>
+    <p>
+        This project implements a Machine Learning solution to predict whether a crop plot is experiencing water stress. 
+        It leverages a <strong>Support Vector Machine (SVM) with a Radial Basis Function (RBF) kernel</strong> to capture 
+        non-linear relationships between various environmental metrics.
+    </p>
+
+    <h2>Features Used for Prediction</h2>
+    <ul>
+        <li>💧 <strong>Soil Moisture:</strong> Water content in the soil.</li>
+        <li>🌡️ <strong>Temperature:</strong> Ambient or soil temperature.</li>
+        <li>☁️ <strong>Humidity:</strong> Moisture level in the air.</li>
+        <li>🌱 <strong>Vegetation Index:</strong> Remote sensing metrics (e.g., NDVI) indicating plant health.</li>
+    </ul>
+
+    <h2>Data Pipeline</h2>
+    <p>
+        The pipeline is designed to automatically ingest datasets directly from <strong>Kaggle</strong> using the <code>kagglehub</code> library.
+        It preprocesses the features, handles missing values, scales the numerical inputs, and fits the Kernel SVM model to output a water stress classification.
+    </p>
+
+    <h2>Usage</h2>
+    <p>To run the model locally, clone the repository and execute:</p>
+    <pre><code>pip install -r requirements.txt
+python train.py --dataset your-kaggle-username/dataset-name</code></pre>
+
+    <a href="https://github.com/lak-is-law/crop-water-stress-prediction" class="btn" target="_blank">View on GitHub</a>
+</div>
+
+<footer>
+    <p>&copy; 2026 Crop Water Stress ML Project</p>
+</footer>
+
+</body>
+</html>
