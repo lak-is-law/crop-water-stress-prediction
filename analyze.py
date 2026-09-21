@@ -29,6 +29,24 @@ def setup_database_and_load_data():
     
     return conn
 
+def print_terminal_graph(moist, temp, hum, veg):
+    """Generates an ASCII bar chart in the terminal based on user inputs."""
+    def draw_bar(label, value, max_value, unit=""):
+        bar_length = 30
+        # Cap the value at max_value for the visual bar
+        visual_val = min(value, max_value)
+        visual_val = max(visual_val, 0)
+        filled_len = int(bar_length * (visual_val / max_value))
+        bar = '█' * filled_len + '░' * (bar_length - filled_len)
+        print(f"{label:<18} |{bar}| {value:.1f}{unit}")
+        
+    print("\n📊 TERMINAL INPUT GRAPH:")
+    draw_bar("Soil Moisture", moist, 100, "%")
+    draw_bar("Temperature", temp, 50, "°C")
+    draw_bar("Humidity", hum, 100, "%")
+    draw_bar("Vegetation Index", veg, 1.0, "")
+    print("-" * 55)
+
 def analyze_data_from_db(conn):
     """
     Queries the database and runs the non-linear SVM analysis.
@@ -80,8 +98,10 @@ def analyze_data_from_db(conn):
             hum = float(input("Enter Humidity % (e.g., 20 to 90): "))
             veg = float(input("Enter Vegetation Index (e.g., 0.2 to 0.9): "))
             
+            # Draw the terminal graph
+            print_terminal_graph(moist, temp, hum, veg)
+            
             # Create a dataframe for the custom input to match training feature names
-            # Features used: ['soil_moisture', 'temperature', 'humidity', 'vegetation_index']
             custom_df = pd.DataFrame([[moist, temp, hum, veg]], columns=feature_cols)
             
             # Scale the input using the same scaler used for training
@@ -91,9 +111,9 @@ def analyze_data_from_db(conn):
             prediction = model.predict(custom_scaled)[0]
             
             if prediction == 1:
-                print("\n⚠️  PREDICTION: The crop is likely UNDER WATER STRESS. Needs irrigation!")
+                print("⚠️  PREDICTION: The crop is likely UNDER WATER STRESS. Needs irrigation!")
             else:
-                print("\n✅ PREDICTION: The crop is HEALTHY (No water stress).")
+                print("✅ PREDICTION: The crop is HEALTHY (No water stress).")
                 
         except ValueError:
             print("Invalid input. Please enter numerical values only.")
