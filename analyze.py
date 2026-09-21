@@ -7,7 +7,6 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import accuracy_score
 
 DB_NAME = "crop_data.db"
-DATA_FOLDER = "data"
 
 def setup_database_and_load_data():
     """
@@ -19,17 +18,12 @@ def setup_database_and_load_data():
     # For PostgreSQL, you would use: psycopg2.connect(host="...", database="...", user="...", password="...")
     conn = sqlite3.connect(DB_NAME)
     
-    # 2. Find the downloaded CSV
-    if not os.path.exists(DATA_FOLDER):
-        print(f"Error: '{DATA_FOLDER}' folder not found. Please run download_dataset.py first.")
+    # 2. Use the local dataset.csv
+    csv_path = "dataset.csv"
+    if not os.path.exists(csv_path):
+        print(f"Error: '{csv_path}' not found.")
         return None
         
-    csv_files = [f for f in os.listdir(DATA_FOLDER) if f.endswith('.csv')]
-    if not csv_files:
-        print("Error: No CSV files found in the data folder. Please run download_dataset.py first.")
-        return None
-        
-    csv_path = os.path.join(DATA_FOLDER, csv_files[0])
     print(f"Loading data from {csv_path} into database...")
     
     # 3. Read CSV and push to Database
