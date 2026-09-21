@@ -25,5 +25,5 @@ Run the analysis script. This script will:
 - Train the non-linear SVM (RBF kernel) on the queried data.
 
 ```bash
-python analyze.py
+python3 analyze.py
 ```
