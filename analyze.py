@@ -49,37 +49,33 @@ def print_terminal_graph(moist, temp, hum, veg):
     draw_bar("Vegetation Index", veg, 1.0, "")
     print("-" * 55)
 
-def generate_visualizations(df, feature_cols, target_col, X_scaled):
+def show_custom_visualization(df, target_col, X_pca, clusters, centers_pca, custom_point_pca=None):
     """
-    Generates a Pie Chart for class distribution and a K-Means Cluster Map.
+    Generates a Pie Chart for class distribution and a K-Means Cluster Map,
+    highlighting the user's custom input point.
     """
     print("Generating Graphical Plots (Close the window to continue)...")
     
-    # Set up the figure with 2 subplots
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 6))
-    fig.canvas.manager.set_window_title('Crop Water Stress Analysis')
+    fig.canvas.manager.set_window_title('Crop Water Stress Analysis - Custom Input')
     
     # 1. Pie Chart for Water Stress Distribution
     stress_counts = df[target_col].value_counts()
     labels = ['Healthy (0)', 'Under Stress (1)'] if 0 in stress_counts.index and 1 in stress_counts.index else stress_counts.index
     ax1.pie(stress_counts, labels=labels, autopct='%1.1f%%', startangle=90, colors=['#2ecc71', '#e74c3c'])
-    ax1.set_title('Proportion of Crop Water Stress')
+    ax1.set_title('Overall Proportion of Crop Water Stress')
     
     # 2. K-Means Cluster Map (Reduced to 2D via PCA)
-    # Perform K-Means clustering (K=2, since we suspect 2 main states: Healthy vs Stressed)
-    kmeans = KMeans(n_clusters=2, random_state=42, n_init=10)
-    clusters = kmeans.fit_predict(X_scaled)
-    
-    # Use PCA to reduce 4D data to 2D for plotting
-    pca = PCA(n_components=2)
-    X_pca = pca.fit_transform(X_scaled)
-    
-    # Scatter plot of the clusters
-    sns.scatterplot(x=X_pca[:, 0], y=X_pca[:, 1], hue=clusters, palette='viridis', ax=ax2, s=50, alpha=0.6)
+    sns.scatterplot(x=X_pca[:, 0], y=X_pca[:, 1], hue=clusters, palette='viridis', ax=ax2, s=30, alpha=0.3)
     
     # Plot cluster centers
-    centers_pca = pca.transform(kmeans.cluster_centers_)
-    ax2.scatter(centers_pca[:, 0], centers_pca[:, 1], c='red', s=200, marker='X', label='Centroids')
+    ax2.scatter(centers_pca[:, 0], centers_pca[:, 1], c='red', s=150, marker='X', label='Centroids')
+    
+    # Highlight the custom input point if provided
+    if custom_point_pca is not None:
+        ax2.scatter(custom_point_pca[0, 0], custom_point_pca[0, 1], 
+                    c='magenta', s=400, marker='*', edgecolor='black', linewidth=1.5, 
+                    label='YOUR CUSTOM INPUT', zorder=5)
     
     ax2.set_title('K-Means Cluster Map (PCA Reduced)')
     ax2.set_xlabel('Principal Component 1')
@@ -116,10 +112,14 @@ def analyze_data_from_db(conn):
     scaler = StandardScaler()
     X_train_scaled = scaler.fit_transform(X_train)
     X_test_scaled = scaler.transform(X_test)
-    X_scaled_full = scaler.transform(X) # For clustering full dataset
+    X_scaled_full = scaler.transform(X)
     
-    # Generate the requested plots (Pie chart & K-Means Cluster Map)
-    generate_visualizations(df_db, feature_cols, target_col, X_scaled_full)
+    # Fit KMeans and PCA once for the visualization
+    kmeans = KMeans(n_clusters=2, random_state=42, n_init=10)
+    clusters = kmeans.fit_predict(X_scaled_full)
+    pca = PCA(n_components=2)
+    X_pca = pca.fit_transform(X_scaled_full)
+    centers_pca = pca.transform(kmeans.cluster_centers_)
     
     print("Training Non-Linear Kernel SVM (RBF)...")
     model = SVC(kernel='rbf')
@@ -155,6 +155,10 @@ def analyze_data_from_db(conn):
             else:
                 print("PREDICTION: The crop is HEALTHY (No water stress).")
                 
+            # Transform custom point to 2D using PCA and show the map
+            custom_point_pca = pca.transform(custom_scaled)
+            show_custom_visualization(df_db, target_col, X_pca, clusters, centers_pca, custom_point_pca)
+            
         except ValueError:
             print("Invalid input. Please enter numerical values only.")
 
