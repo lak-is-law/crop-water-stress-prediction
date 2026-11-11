@@ -27,3 +27,13 @@ Run the analysis script. This script will:
 ```bash
 python3 analyze.py
 ```
+
+### Stratified five-fold evaluation
+
+To report mean and standard deviation for accuracy and macro-F1 on the first 5,000 rows, run:
+
+```bash
+python3 cross_validate.py
+```
+
+Each fold fits its own scaler and RBF SVC; the folds preserve the class proportions. This supplements the original single holdout score.
